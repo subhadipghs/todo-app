@@ -1,8 +1,22 @@
+*,
+*::before,
+*::after {
+
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Inter Regular", sans-serif;
+	font-weight: 400;
+}
+
+html {
+	font-size: 16px;
+	font-weight: 400;
+	box-sizing: border-box;
+}	
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +24,18 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+a:hover, button:hover {
+	cursor: pointer;
+}
+
+a:focus, button:focus, input:focus {
+	outline: none !important;
+	border: none !important;
+}
+
+input:active {
+	outline: none !important;
 }
